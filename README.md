@@ -83,7 +83,7 @@ You should not need to perform the below process unless the "redis-cli" executab
 /home/vcap/app/redis-cli: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.29' not found (required by /home/vcap/app/redis-cli)
 /home/vcap/app/redis-cli: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.28' not found (required by /home/vcap/app/redis-cli)
 ~~~~
-when run inside the PAS application instance, or if you require the CLI for a newer release of redis. In that case, you can rebuild this by following these steps. Start by doing the steps above under "How to use" because we need a PAS application instance inside which to do the compilation.
+when run inside the PAS application instance, or if you require the CLI for a newer release of redis. In that case, you can rebuild this by following these steps. Start by doing the steps above under "How to deploy" because we need a PAS application instance inside which to do the compilation.
 1. cf ssh redcli
 2. mkdir redis-src
 3. cd redis-src
